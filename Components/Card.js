@@ -19,6 +19,7 @@ const Card = (props) => {
       <TouchableOpacity
         onPress={() => {
           Linking.openURL("https://www.skyscanner.com.au/");
+          navigation.navigate("Cost");
         }}
       >
         <Text style={styles.button}>{props.button}</Text>
