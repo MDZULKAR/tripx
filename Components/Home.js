@@ -9,20 +9,40 @@ const Home = (props) => {
         <Text style={styles.text}>Welcome to trip X</Text>
       </View>
       <TouchableOpacity
+        style={styles.button}
         onPress={() => {
           props.navigation.navigate("Login");
         }}
       >
-        <Text style={styles.button}>Login</Text>
+        <Text
+          style={{
+            color: "black",
+            textAlign: "center",
+            justifyContent: "center",
+            fontSize: 17,
+          }}
+        >
+          Login
+        </Text>
       </TouchableOpacity>
       <Text style={styles.textor}>Or</Text>
 
       <TouchableOpacity
+        style={styles.button}
         onPress={() => {
           props.navigation.navigate("Signup");
         }}
       >
-        <Text style={styles.button}>Sign Up</Text>
+        <Text
+          style={{
+            color: "black",
+            textAlign: "center",
+            justifyContent: "center",
+            fontSize: 17,
+          }}
+        >
+          Sign Up
+        </Text>
       </TouchableOpacity>
     </View>
   );
@@ -50,8 +70,8 @@ const styles = StyleSheet.create({
     width: 150,
     height: 45,
     padding: 10,
-    textAlign: "center",
-    justifyContent: "center",
+    // textAlign: "center",
+    // justifyContent: "center",
     backgroundColor: Colors.buttoncolor,
     color: "black",
     fontSize: 17,
